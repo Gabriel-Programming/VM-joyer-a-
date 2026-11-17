@@ -22,7 +22,7 @@ export default function Categorias() {
   return (
     <section
       id="categorias"
-      className="mx-auto flex max-w-7xl flex-col gap-12 px-8 pt-26 pb-24"
+      className="mx-auto flex max-w-7xl flex-col gap-9 px-5 pt-16 pb-16 sm:px-8 lg:gap-12 lg:pt-26 lg:pb-24"
     >
       <div className="flex flex-wrap items-end justify-between gap-x-12 gap-y-4">
         <h2 className="titulo-seccion">Una joya para cada promesa</h2>
@@ -32,7 +32,7 @@ export default function Categorias() {
         </p>
       </div>
 
-      <ul className="grid gap-6 md:grid-cols-3">
+      <ul className="grid gap-x-6 gap-y-8 md:grid-cols-3">
         {categorias.map((c) => (
           <li key={c.titulo}>
             <Link href={c.href} className="group flex flex-col gap-4.5">
@@ -43,15 +43,15 @@ export default function Categorias() {
                   width={640}
                   height={800}
                   sizes="(min-width: 768px) 30vw, 90vw"
-                  className="aspect-[4/5] w-full object-cover"
+                  className="aspect-[4/3] w-full object-cover md:aspect-[4/5]"
                 />
               ) : (
-                <span className="flex aspect-[4/5] w-full items-center justify-center border border-dashed border-oro bg-arena text-sm tracking-[0.14em] text-texto uppercase">
+                <span className="flex aspect-[4/3] w-full items-center justify-center border border-dashed border-oro bg-arena text-sm tracking-[0.14em] text-texto uppercase md:aspect-[4/5]">
                   [Foto de colgante]
                 </span>
               )}
               <span className="flex items-baseline justify-between gap-4 border-b border-linea pb-3.5 group-hover:border-oro">
-                <span className="font-display text-3xl leading-tight">
+                <span className="font-display text-[26px] leading-tight sm:text-3xl">
                   {c.titulo}
                 </span>
                 <svg

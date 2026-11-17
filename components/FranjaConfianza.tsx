@@ -51,7 +51,7 @@ export default function FranjaConfianza() {
       aria-label="Cómo trabajamos"
       className="border-y border-linea bg-papel"
     >
-      <ul className="mx-auto grid max-w-7xl gap-x-8 gap-y-6 px-8 py-8 sm:grid-cols-2 lg:grid-cols-4">
+      <ul className="mx-auto grid max-w-7xl gap-x-8 gap-y-6 px-5 py-8 sm:grid-cols-2 sm:px-8 lg:grid-cols-4">
         {puntos.map((p) => (
           <li key={p.titulo} className="flex items-start gap-3.5">
             <svg

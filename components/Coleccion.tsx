@@ -23,7 +23,7 @@ export default function Coleccion({ productos }: { productos: Producto[] }) {
 
   return (
     <section id="coleccion" className="border-t border-linea bg-papel">
-      <div className="mx-auto flex max-w-7xl flex-col gap-11 px-8 pt-24 pb-26">
+      <div className="mx-auto flex max-w-7xl flex-col gap-9 px-5 pt-16 pb-16 sm:px-8 lg:gap-11 lg:pt-24 lg:pb-26">
         <div className="flex flex-wrap items-end justify-between gap-x-12 gap-y-5">
           <div className="flex flex-col gap-2.5">
             <span className="etiqueta text-oro-profundo">Del catálogo</span>
@@ -53,7 +53,7 @@ export default function Coleccion({ productos }: { productos: Producto[] }) {
           </div>
         </div>
 
-        <ul className="grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-4">
           {visibles.map((p) => (
             <li key={p.slug}>
               <TarjetaProducto producto={p} />

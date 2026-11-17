@@ -3,19 +3,19 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="mx-auto grid max-w-7xl items-center gap-x-16 gap-y-14 px-8 pt-18 pb-26 lg:grid-cols-2">
-      <div className="flex flex-col gap-7">
+    <section className="mx-auto grid max-w-7xl items-center gap-x-16 gap-y-12 px-5 pt-10 pb-20 sm:px-8 lg:pt-18 lg:pb-26 lg:grid-cols-2">
+      <div className="flex flex-col gap-6 lg:gap-7">
         <span className="text-[12.5px] font-medium tracking-[0.22em] text-oro-profundo uppercase">
           Taller de joyería · Chile
         </span>
 
-        <h1 className="font-display text-[clamp(44px,5.2vw,74px)] leading-[1.02] font-medium tracking-[-0.01em] text-balance">
+        <h1 className="font-display text-[clamp(40px,5.2vw,74px)] leading-[1.02] font-medium tracking-[-0.01em] text-balance">
           Argollas hechas a pedido, en{" "}
           <em className="font-normal text-plata-profunda">plata 950</em> y{" "}
           <em className="font-normal text-oro-profundo">oro 18 kilates</em>.
         </h1>
 
-        <p className="max-w-[30em] text-[19px] font-light text-pretty text-texto">
+        <p className="max-w-[30em] text-lg font-light sm:text-[19px] text-pretty text-texto">
           Elige tu modelo, mide tu talla desde la pantalla y la fabricamos para
           ti. Retiro coordinado en la Región Metropolitana o envío a regiones.
         </p>

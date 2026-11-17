@@ -36,7 +36,7 @@ export default function Carrito() {
   ].join("\n");
 
   return (
-    <div className="mx-auto flex max-w-4xl flex-col gap-10 px-8 pt-14 pb-24">
+    <div className="mx-auto flex max-w-4xl flex-col gap-8 px-5 pt-10 pb-16 sm:gap-10 sm:px-8 sm:pt-14 sm:pb-24">
       <h1 className="font-display text-[clamp(40px,4.2vw,60px)] leading-[1.03] font-medium">
         Tu carrito
       </h1>

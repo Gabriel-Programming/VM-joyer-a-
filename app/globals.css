@@ -1,0 +1,47 @@
+@import "tailwindcss";
+/* El backend de Medusa no usa Tailwind: que no lo escanee. */
+@source not "../backend";
+@source not "../medusa-vm";
+
+@theme inline {
+  /* Base: el mármol y la franja negra de los catálogos */
+  --color-marfil: #f6f1e8;
+  --color-papel: #fffdf9;
+  --color-arena: #efe7d8;
+  --color-tinta: #1a1612;
+  --color-texto: #5c5348;
+  --color-linea: #ddd3c2;
+
+  /* Oro 18K */
+  --color-oro: #b8893a;
+  --color-oro-profundo: #7f5a16;
+  --color-oro-claro: #d9b36a;
+
+  /* Plata 950 */
+  --color-plata: #eceef3;
+  --color-plata-borde: #9ba0aa;
+  --color-plata-profunda: #4a505b;
+
+  --font-display: var(--font-cormorant), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-jost), "Avenir Next", "Century Gothic", sans-serif;
+}
+
+/* Rótulo pequeño en mayúsculas que se repite en todo el sitio */
+@utility etiqueta {
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* Título de sección en la tipografía de display */
+@utility titulo-seccion {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(36px, 3.6vw, 52px);
+  line-height: 1.05;
+}
+
+input[type="range"] {
+  accent-color: #7f5a16;
+}

@@ -57,7 +57,7 @@ El panel de administración queda en http://localhost:9000/app.
 
 ## Componentes (`components/`)
 
-- **Inicio:** `Header`, `Hero`, `FranjaConfianza`, `Categorias`, `Coleccion`, `TarjetaProducto`, `MedidorTeaser`, `PasosPedido`, `Contacto`, `Footer`.
+- **Inicio:** `Header`, `MenuMovil` (menú desplegable en teléfono y tablet), `Hero`, `FranjaConfianza`, `Categorias`, `Coleccion`, `TarjetaProducto`, `MedidorTeaser`, `PasosPedido`, `Contacto`, `Footer`.
 - **Medidor:** `Medidor`.
 - **Fichas:** `FichaAnillo`, `FichaColgante`.
 - **Carrito:** `CarritoProvider` (estado compartido), `BotonCarrito` (contador de la cabecera), `Carrito`.
@@ -75,6 +75,14 @@ El panel de administración queda en http://localhost:9000/app.
 - Cada talla es una variante en Medusa con su propio inventario en la bodega "Taller VM Joyería".
 - La ficha pide el stock en vivo cada vez que se abre: con unidades muestra "lista para despacho"; sin unidades, "se fabrica a pedido" (la variante permite venta sin stock).
 - Medusa descuenta la unidad cuando se confirma un pedido. Mientras el pedido se cierre por WhatsApp, el stock se ajusta a mano en el panel (Inventario).
+
+## Diseño adaptable
+
+La tienda se adapta a teléfono, tablet y escritorio con los puntos de corte de Tailwind:
+
+- **Menos de 1024 px (`lg`):** la navegación pasa al menú desplegable (`MenuMovil`).
+- **Desde 768 px (`md`):** las fichas de producto muestran foto y compra lado a lado.
+- **Teléfono:** la colección va en dos columnas y el medidor muestra el escenario a todo el ancho, pegado a su control.
 
 ## Paleta y tipografías
 

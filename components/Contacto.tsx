@@ -8,7 +8,7 @@ import {
 export default function Contacto() {
   return (
     <section className="border-t border-linea bg-arena">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-16 gap-y-8 px-8 py-20">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-16 gap-y-8 px-5 py-14 sm:px-8 lg:py-20">
         <div className="flex max-w-[34em] flex-col gap-3">
           <h2 className="font-display text-[clamp(32px,3.2vw,46px)] leading-[1.08] font-medium">
             ¿Tienes un diseño en mente?

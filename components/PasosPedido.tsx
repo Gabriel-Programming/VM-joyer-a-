@@ -22,7 +22,7 @@ export default function PasosPedido() {
   return (
     <section
       id="como-comprar"
-      className="mx-auto flex max-w-7xl flex-col gap-14 px-8 pt-26 pb-24"
+      className="mx-auto flex max-w-7xl flex-col gap-10 px-5 pt-16 pb-16 sm:px-8 lg:gap-14 lg:pt-26 lg:pb-24"
     >
       <h2 className="titulo-seccion">Cómo realizar tu pedido</h2>
       <ol className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">

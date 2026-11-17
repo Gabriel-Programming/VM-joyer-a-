@@ -99,7 +99,7 @@ export default function FichaAnillo({ producto }: { producto: Producto }) {
     producto.metal === "oro" ? "text-oro-profundo" : "text-plata-profunda";
 
   return (
-    <div className="mx-auto flex max-w-7xl flex-col gap-8 px-8 pt-7 pb-24">
+    <div className="mx-auto flex max-w-7xl flex-col gap-6 px-5 pt-5 pb-16 sm:gap-8 sm:px-8 sm:pt-7 sm:pb-24">
       <nav aria-label="Ruta" className="flex flex-wrap gap-2 text-sm text-texto">
         <Link href="/" className="hover:text-oro-profundo">
           Inicio
@@ -112,7 +112,7 @@ export default function FichaAnillo({ producto }: { producto: Producto }) {
         <span className="text-tinta">{producto.nombre}</span>
       </nav>
 
-      <div className="grid items-start gap-x-18 gap-y-12 lg:grid-cols-2">
+      <div className="grid items-start gap-x-10 gap-y-9 md:grid-cols-2 lg:gap-x-18">
         {/* La galería con Swiper y el zoom con PhotoSwipe llegan en la fase 6 */}
         <Image
           src={producto.imagen}
@@ -120,8 +120,8 @@ export default function FichaAnillo({ producto }: { producto: Producto }) {
           width={producto.ancho}
           height={producto.alto}
           preload
-          sizes="(min-width: 1024px) 45vw, 90vw"
-          className="aspect-[9/10] w-full object-cover"
+          sizes="(min-width: 768px) 45vw, 90vw"
+          className="aspect-[9/10] w-full object-cover md:sticky md:top-6"
         />
 
         <div className="flex flex-col gap-6.5">
@@ -150,7 +150,7 @@ export default function FichaAnillo({ producto }: { producto: Producto }) {
               </span>
               <Link
                 href="/medidor"
-                className="border-b border-oro py-1 text-[15px] hover:text-oro-profundo"
+                className="inline-flex min-h-11 items-center border-b border-oro text-[15px] hover:text-oro-profundo"
               >
                 ¿No conoces tu talla? Mídela en pantalla
               </Link>
@@ -298,7 +298,7 @@ export default function FichaAnillo({ producto }: { producto: Producto }) {
             )}
           </div>
 
-          <dl className="grid grid-cols-[150px_1fr] gap-x-3 gap-y-2.5 border-t border-linea pt-5 text-[15.5px] text-texto">
+          <dl className="grid grid-cols-[minmax(110px,150px)_1fr] gap-x-3 gap-y-2.5 border-t border-linea pt-5 text-[15.5px] text-texto">
             <dt className="font-medium text-tinta">Región Metropolitana</dt>
             <dd>Entrega presencial coordinada o envío.</dd>
             <dt className="font-medium text-tinta">Regiones</dt>

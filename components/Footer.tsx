@@ -28,7 +28,7 @@ const columnas = [
 export default function Footer() {
   return (
     <footer className="bg-tinta text-marfil">
-      <div className="mx-auto flex max-w-7xl flex-col gap-14 px-8 pt-18 pb-10">
+      <div className="mx-auto flex max-w-7xl flex-col gap-10 px-5 pt-14 pb-10 sm:px-8 lg:gap-14 lg:pt-18">
         <div className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col gap-2.5">
             <span className="font-display text-[32px] leading-none font-semibold">

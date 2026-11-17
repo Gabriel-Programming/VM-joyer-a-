@@ -29,7 +29,7 @@ export default function FichaColgante() {
   const dije = DIJES.find((d) => d.nombre === nombreDije) ?? DIJES[1];
 
   return (
-    <div className="mx-auto flex max-w-7xl flex-col gap-8 px-8 pt-7 pb-24">
+    <div className="mx-auto flex max-w-7xl flex-col gap-6 px-5 pt-5 pb-16 sm:gap-8 sm:px-8 sm:pt-7 sm:pb-24">
       <nav aria-label="Ruta" className="flex flex-wrap gap-2 text-sm text-texto">
         <Link href="/" className="hover:text-oro-profundo">
           Inicio
@@ -38,7 +38,7 @@ export default function FichaColgante() {
         <span className="text-tinta">Colgantes y cadenas</span>
       </nav>
 
-      <div className="grid items-start gap-x-18 gap-y-12 lg:grid-cols-2">
+      <div className="grid items-start gap-x-10 gap-y-9 md:grid-cols-2 lg:gap-x-18">
         {/* PENDIENTE: foto, nombre, material y precio reales del colgante */}
         <div className="flex aspect-[4/5] w-full items-center justify-center border border-dashed border-plata-borde bg-plata text-sm tracking-[0.14em] text-plata-profunda uppercase">
           [Foto del colgante]
